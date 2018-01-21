@@ -1,5 +1,5 @@
 import pydash as _
-import defintions
+import definitions
 import sys
 import spotipy
 import spotipy.util as util
@@ -8,9 +8,9 @@ import spotipy.util as util
 def login(username, scope):
     token = util.prompt_for_user_token(username,
                                        scope,
-                                       client_id=defintions.SPOTIPY_CLIENT_ID,
-                                       client_secret=defintions.SPOTIPY_CLIENT_SECRET,
-                                       redirect_uri=defintions.SPOTIPY_REDIRECT_URI)
+                                       client_id=definitions.SPOTIPY_CLIENT_ID,
+                                       client_secret=definitions.SPOTIPY_CLIENT_SECRET,
+                                       redirect_uri=definitions.SPOTIPY_REDIRECT_URI)
 
     if not token:
         print("Can't get token for", username)
